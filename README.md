@@ -27,7 +27,7 @@ Users should be able to:
 ### Links
 
 - Solution URL: [https://github.com/Mikael-duru/Order-summary-card.git](https://github.com/Mikael-duru/Order-summary-card.git)
-- Live Site URL: [Add live site URL here](https://your-live-site-url.com)
+- Live Site URL: [https://mikael-duru.github.io/Order-summary-card/](https://mikael-duru.github.io/Order-summary-card/)
 
 ## My process
 
