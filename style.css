@@ -1,0 +1,203 @@
+@import url('https://fonts.googleapis.com/css2?family=Red+Hat+Display:wght@500;700;900&display=swap');
+
+
+:root {
+
+  /* Primary colors */
+  --pale-blue: hsl(225, 100%, 94%);
+  --bright-blue: hsl(245, 75%, 52%);
+
+  /* Neutral colors */
+  --very-pale-blue: hsl(225, 100%, 98%);
+  --desaturated-blue: hsl(224, 23%, 55%);
+  --dark-blue: hsl(223, 47%, 23%);
+
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+html {
+  box-sizing: inherit;
+  font-size: 62.5%;
+}
+
+body {
+  background: var(--pale-blue) url(./images/pattern-background-desktop.svg) no-repeat;
+  font-family: 'Red Hat Display', sans-serif;
+  font-weight: 500;
+  color: var(--desaturated-blue);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+}
+
+a {
+  text-decoration: none;
+  color: var(--desaturated-blue);
+}
+
+h1,
+h2 {
+  color: var(--dark-blue);
+  font-weight: 900;
+}
+
+
+/* main section */
+main {
+  margin-bottom: 3rem;
+}
+
+.card {
+  width: 390px;
+  background-color: #fff;
+  border-radius: 2rem;
+  box-shadow: 0px 8px 16px rgba(0, 0, 0, .1);
+}
+
+.card .hero {
+  width: 100%;
+  object-fit: cover;
+  border-radius: 2rem 2rem 0 0;
+}
+
+.card .desc {
+  padding: 3.4rem 2.6rem;
+  text-align: center;
+}
+
+.card .desc h1 {
+  font-size: 2.95rem;
+}
+
+.card .desc p {
+  font-size: 16px;
+  margin: 2rem 0;
+  padding: 0 1rem;
+}
+
+.card .desc .plan-section {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: var(--very-pale-blue);
+  border-radius: 1.2rem;
+  margin: 2.6rem 0;
+}
+
+.card .desc .plan-section img {
+  vertical-align: top;
+  padding: 1.7rem 1.3rem 1.7rem 1.7rem;
+}
+
+.card .desc .plan-section .plan {
+  flex: 1;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.card .desc .plan-section .plan h2 {
+  font-size: 1.7rem;
+  padding-top: 2rem;
+}
+
+.card .desc .plan-section .plan p {
+  font-size: 15.5px;
+  margin-top: .3rem;
+}
+
+.card .desc .plan-section .plan .change-plan {
+  font-size: 13px;
+  font-weight: 700;
+  text-decoration: underline;
+  color: var(--bright-blue);
+  padding-right: 1.7rem;
+}
+
+.card .desc .plan-section .plan .change-plan:hover {
+  text-decoration: none;
+  color: hsla(245, 75%, 52%, .7);
+}
+
+.card .desc .btn {
+  width: 100%;
+  padding: 1.5rem;
+  border: none;
+  border-radius: 1.2rem;
+  font-family: inherit;
+  font-size: 16px;
+  font-weight: 700;
+  color: #fff;
+  background: var(--bright-blue);
+  box-shadow: 0px 15px 16px 3px hsla(245, 75%, 52%, .2);
+  cursor: pointer;
+}
+
+.card .desc .btn:hover {
+  background-color: hsla(245, 75%, 52%, .7);
+}
+
+.card .desc .order-cancel {
+  display: block;
+  font-size: 15px;
+  font-weight: 900;
+  margin-top: 2.3rem;
+}
+
+.card .desc .order-cancel:hover {
+  color: var(--dark-blue);
+}
+
+
+/* main ends */
+
+
+/* Footer */
+.attribution {
+  font-size: 11px;
+  text-align: center;
+}
+
+.attribution a {
+  color: hsl(228, 45%, 44%);
+}
+
+/* Footer ends */
+
+
+
+/* Responsive styles */
+
+/* screen size less than 1440px */
+@media screen and (max-width: 1440px) {
+  html {
+    font-size: 60%;
+  }
+}
+
+/* screen size less than 375px */
+@media screen and (max-width: 375px) {
+  html {
+    font-size: 55%;
+  }
+
+  body {
+    background: var(--pale-blue) url(./images/pattern-background-mobile.svg) no-repeat;
+  }
+
+  .card {
+    width: 340px;
+  }
+
+  .card .desc h1 {
+    font-size: 2.8rem;
+  }
+
+}
